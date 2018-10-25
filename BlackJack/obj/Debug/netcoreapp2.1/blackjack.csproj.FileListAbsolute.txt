@@ -1,0 +1,11 @@
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/bin/Debug/netcoreapp2.1/blackjack.deps.json
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/bin/Debug/netcoreapp2.1/blackjack.runtimeconfig.json
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/bin/Debug/netcoreapp2.1/blackjack.runtimeconfig.dev.json
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/bin/Debug/netcoreapp2.1/blackjack.dll
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/bin/Debug/netcoreapp2.1/blackjack.pdb
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.csprojAssemblyReference.cache
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.csproj.CoreCompileInputs.cache
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.AssemblyInfoInputs.cache
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.AssemblyInfo.cs
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.dll
+/Users/antonoberg/Projects/1DV607/blackjack_csharp/BlackJack/obj/Debug/netcoreapp2.1/blackjack.pdb
