@@ -12,7 +12,6 @@ namespace BlackJack.model
 
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
-
         private rules.IWinnerStrategy m_winner;
 
 
@@ -70,11 +69,11 @@ namespace BlackJack.model
             {
                 return true;
             }
-            else if (CalcScore() > g_maxScore)
+            else if (CalcScore() > g_maxScore) 
             {
                 return false;
             }
-            return CalcScore() >= a_player.CalcScore();
+            return m_winner.IsWinner(CalcScore(), a_player);
         }
 
         public bool IsGameOver()

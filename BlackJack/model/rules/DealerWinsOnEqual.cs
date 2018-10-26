@@ -7,9 +7,13 @@ namespace BlackJack.model.rules
 {
     class DealerWinsOnEqual : IWinnerStrategy
     {
-        public bool IsWinner(Player a_dealer)
+        public bool IsWinner(int score, Player a_dealer)
         {
-            throw new NotImplementedException();
+            if(score == a_dealer.CalcScore())
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
