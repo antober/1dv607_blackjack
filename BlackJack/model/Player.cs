@@ -9,9 +9,25 @@ namespace BlackJack.model
     {
         private List<Card> m_hand = new List<Card>();
 
+        protected List<IObservers> m_observers = new List<IObservers>();
+
         public void DealCard(Card a_card)
         {
             m_hand.Add(a_card);
+            foreach (IObservers subscribers in m_observers)
+            {
+                subscribers.CardRecieved();
+            }
+        }
+
+        public void AddSubscriber(IObservers subscriber)
+        {
+            m_observers.Add(subscriber);   
+        }
+
+        public void ClearSubscriber()
+        {
+            m_observers.Clear();
         }
 
         public IEnumerable<Card> GetHand()

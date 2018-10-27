@@ -7,6 +7,6 @@ namespace BlackJack.model.rules
 {
     interface IWinnerStrategy
     {
-        bool IsWinner(int score, model.Player a_dealer);
+        bool IsWinner(model.Dealer a_dealer, model.Player a_player);
     }
 }

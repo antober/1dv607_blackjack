@@ -7,13 +7,25 @@ namespace BlackJack.model.rules
 {
     class DealerWinsOnEqual : IWinnerStrategy
     {
-        public bool IsWinner(int score, Player a_dealer)
+        private int g_maxScore = 21;
+        public bool IsWinner(Dealer a_dealer, Player a_player)
         {
-            if(score == a_dealer.CalcScore())
+            if (a_player.CalcScore() > g_maxScore)
             {
                 return true;
             }
-            return false;
+            else if (a_dealer.CalcScore() > g_maxScore) 
+            {
+                return false;
+            }
+            else if (a_dealer.CalcScore() == a_dealer.CalcScore())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

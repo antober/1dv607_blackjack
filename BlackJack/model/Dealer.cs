@@ -65,15 +65,7 @@ namespace BlackJack.model
 
         public bool IsDealerWinner(Player a_player)
         {
-            if (a_player.CalcScore() > g_maxScore)
-            {
-                return true;
-            }
-            if (CalcScore() > g_maxScore) 
-            {
-                return false;
-            }
-            return m_winner.IsWinner(CalcScore(), a_player);
+            return m_winner.IsWinner(this, a_player);
         }
 
         public bool IsGameOver()
