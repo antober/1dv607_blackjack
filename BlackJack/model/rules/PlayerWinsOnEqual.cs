@@ -14,7 +14,7 @@ namespace BlackJack.model.rules
             {
                 return true;
             }
-            else if (a_dealer.CalcScore() > g_maxScore) 
+            if (a_dealer.CalcScore() > g_maxScore) 
             {
                 return false;
             }
@@ -24,7 +24,7 @@ namespace BlackJack.model.rules
             }
             else
             {
-                return false;
+                return a_dealer.CalcScore() >= a_player.CalcScore();
             }
         }
     }
