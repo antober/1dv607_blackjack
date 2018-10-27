@@ -69,7 +69,7 @@ namespace BlackJack.model
             {
                 return true;
             }
-            else if (CalcScore() > g_maxScore) 
+            if (CalcScore() > g_maxScore) 
             {
                 return false;
             }
