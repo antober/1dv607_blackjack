@@ -20,6 +20,13 @@ namespace BlackJack.model
             }
         }
 
+        public void GetCard(Deck m_deck)
+        {
+            Card c = m_deck.GetCard();
+            c.Show(true);
+            DealCard(c);
+        }
+
         public void AddSubscriber(IObservers subscriber)
         {
             m_observers.Add(subscriber);   
