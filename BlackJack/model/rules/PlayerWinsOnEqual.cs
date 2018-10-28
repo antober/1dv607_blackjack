@@ -14,17 +14,13 @@ namespace BlackJack.model.rules
             {
                 return true;
             }
-            if (a_dealer.CalcScore() > g_maxScore) 
-            {
-                return false;
-            }
-            else if (a_dealer.CalcScore() == a_dealer.CalcScore())
+            else if (a_dealer.CalcScore() > g_maxScore) 
             {
                 return false;
             }
             else
             {
-                return a_dealer.CalcScore() > a_player.CalcScore();
+                return a_player.CalcScore() <= a_dealer.CalcScore();
             }
         }
     }
