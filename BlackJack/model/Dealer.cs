@@ -38,8 +38,8 @@ namespace BlackJack.model
         {
             if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver())
             {
-                GetCard(m_deck);
-
+                a_player.GetCard(m_deck);
+    
                 return true;
             }
             return false;

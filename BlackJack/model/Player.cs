@@ -29,7 +29,7 @@ namespace BlackJack.model
 
         public void AddSubscriber(IObservers subscriber)
         {
-            m_observers.Add(subscriber);   
+            m_observers.Add(subscriber);
         }
 
         public void ClearSubscriber()
